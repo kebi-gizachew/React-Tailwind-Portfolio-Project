@@ -45,7 +45,7 @@ function ProjectWhole(props){
   ]
   const filteredSets = props.now === "All" ? sets : sets.filter(set => set.class === props.now);
   return (
-    <div className="project-whole-container">
+    <div className="flex flex-wrap justify-center items-center gap-[20px] mt-[20px] max-[768px]:flex-col max-[768px]:gap-[15px] max-[768px]:mt-[10px]">
       {filteredSets.map((set)=>(
         <div key={set.id} className={set.class}>
           <ProjectCard img={set.img} title={set.title} description={set.desc} tech={set.tech.join(", ")} link={set.link} />

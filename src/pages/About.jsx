@@ -8,7 +8,7 @@ function About() {
   const {theme, darkMode} = useContext(PropContext)
 
   return (
-    <div className="h-screen gap-[20px] m-auto w-screen pl-[30px] pt-0 pr-[30px] transition-all duration-300 ease-in-out overflow-hidden max-[768px]:h-auto max-[768px]:pl-[10px] max-[768px]:pr-[10px]" style={{backgroundColor:darkMode ? "black": "white",color: theme.color}}>
+    <div className="h-[120vh] gap-[20px] m-auto w-screen pl-[30px] pt-0 pr-[30px] transition-all duration-300 ease-in-out overflowx-hidden max-[768px]:h-auto max-[768px]:pl-[10px] max-[768px]:pr-[10px]" style={{backgroundColor:darkMode ? "black": "white",color: theme.color}}>
       <Header />
       <div className="flex flex-col items-center justify-center gap-[10px] h-[70vh] w-full max-[768px]:h-auto max-[768px]:gap-[15px]">
         <div className="flex flex-col justify-center items-center">
