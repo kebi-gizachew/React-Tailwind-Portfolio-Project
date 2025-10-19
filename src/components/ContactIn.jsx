@@ -27,16 +27,16 @@ function ContactInfo() {
     ];
 
     return (
-        <div className="contact-info-container" style={{color:theme.color }}>
-            <h1 className="contact-title">Contact Information</h1>
-            <div className="contact-list">
+        <div className="bg-transparent w-[50%] h-[50%] flex flex-col justify-center items-center pb-[50px] transition-all duraation-300 ease-in-out max-[768px]:w-[90%] max-[768px]:h-auto max-[768px]:pb-[30px]" style={{color:theme.color }}>
+            <h1 className="text-[30px] font-bold mb-[20px] max-[768px]:text-[24px] max-[768px]:text-center">Contact Information</h1>
+            <div className="flex flex-col justify items-center gap-[20px] mt-[20px] max-[768px]:gap-[15px] max-[768px]:mt-[15px]">
                 {setInformation.map((info) => (
                     <ContactBox key={info.id} icon={info.icon} main={info.main} info={info.info}
                     />
                 ))}
             </div>
-            <h1 className="connect-title">Connect with me</h1>
-            <div className="social-links">
+            <h1 className="mt-[40px] max-[768px]:mt-[30px] max-[768px]:text-[18px] max-[768px]:text-center">Connect with me</h1>
+            <div className="flex gap-[30px] text-[40px] w-[400px] justify-evenly mt-[20px] max-[768px]:flex-wrap max-[768px]:gap-[20px] max-[768px]:text-[30px] max-[768px]:w-full max-[768px]:justify-center max-[768px]:mt-[15px]">
                 <a style={{color:darkMode? 'white' :'black'}} href='https://github.com/kebi-gizachew' target='_blank' rel='noreferrer'>
                     <FaGithub />
                 </a>
